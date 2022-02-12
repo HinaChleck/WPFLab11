@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPFLab11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFLab11"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Viewbox>
+        <Border Height="204" Width="204">
+            <Path Fill="Red" Stroke="Black" StrokeThickness="2">
+                <Path.Data>
+                    <CombinedGeometry GeometryCombineMode="Union">
+                        <CombinedGeometry.Geometry1>
+                    <CombinedGeometry GeometryCombineMode="Exclude">
+                        <CombinedGeometry.Geometry1>
+                    <EllipseGeometry Center="102,102" RadiusX="100" RadiusY="100"/>
+                        </CombinedGeometry.Geometry1>
+                        <CombinedGeometry.Geometry2>
+                            <EllipseGeometry Center="102,102" RadiusX="75" RadiusY="75"/>
+                        </CombinedGeometry.Geometry2>    
+                    </CombinedGeometry>
+                    </CombinedGeometry.Geometry1>
+                        <CombinedGeometry.Geometry2>
+                        <RectangleGeometry Rect="25,89.5,154,25">
+                            <RectangleGeometry.Transform>
+                                <RotateTransform CenterX="102" CenterY="102" Angle="-45"></RotateTransform>
+                            </RectangleGeometry.Transform>
+                        </RectangleGeometry>
+                        </CombinedGeometry.Geometry2>
+                    </CombinedGeometry>
+                </Path.Data>
+                
+            </Path>
+        </Border>
+        </Viewbox>
+    </Grid>
+</Window>
